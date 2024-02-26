@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="writeup.css">
+
+    <title>Frontend Mentor | Loopstudios landing page</title>
+  </head>
+
+  <body>
+    <div class="menu-container">
+      <ul class="menu">
+        <li><a href="">Home</a></li>
+        <li class="dropdown">
+          <a href="">Services</a>
+          <ul class="dropdown-menu">
+            <li><a href="">Service 1</a></li>
+            <li><a href="">Service 2</a></li>
+          </ul>
+        </li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </div>
+<div class="all-menu" id="all-menu">
+  
+  <ul>
+    <li class="ab">About  </li>
+    <li class="se">Services</li>
+    <li class="ed">Education</li>
+  </ul>
+</div>
+<div class="parent" id="parent">
+
+</div>
+<script>
+  document.getElementById('parent').addEventListener('click', function () {
+    document.getElementById('parent').style.display = "none"
+    document.getElementById('all-menu').style.display = "block"
+})
+</script>
+  </body>
+</html>
